@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semary Website</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- ✅ YOUR EXTERNAL CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+  <!-- Top Header Bar -->
+  <div class="header-top">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Left: Follow Us -->
+        <div class="col-md-6">
+          <div class="follow-us">
+            <span>Follow Us:</span>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Right: Contact Info -->
+        <div class="col-md-6 text-end">
+          <div class="contact-info">
+            <span><i class="bi bi-geo-alt"></i> Jos, Nigeria</span>
+            <span><i class="bi bi-envelope"></i> info@samsjos.edu.ng</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <!-- Logo -->
+       <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="images/SAMS LOGO.jpeg" alt="Logo" class="me-2 rounded-circle" height="40" width="40" loading="lazy">
+  <span class="fw-bold fs-6 d-none d-md-inline">St Augustine's Major Seminary</span>
+  <span class="fw-bold fs-6 d-inline d-md-none">SAMS</span>
+</a>
+
+  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  
+</button>
+
+
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+         <li class="nav-item">
+  <a class="nav-link" href="index.html">Home</a>
+</li>
+
+          <!-- About Us Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="History.html">
+                <i class="bi bi-arrow-right-short"></i> History
+              </a></li>
+              <li><a class="dropdown-item" href="administration.html">
+            <i class="bi bi-arrow-right-short"></i> Administration
+          </a></li>
+              <li><a class="dropdown-item" href="Vocation-Formation.html">
+                <i class="bi bi-arrow-right-short"></i> Vocation & Formation
+              </a></li>
+            </ul>
+          </li>
+<!-- Academics Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#academics" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Academics
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+    <li>
+      <a class="dropdown-item" href="#admission%20admission.html">
+        <i class="bi bi-arrow-right-short"></i> Admission
+      </a>
+    </li>
+   <li>
+  <a class="dropdown-item" href="philosophy%20department.html">
+    <i class="bi bi-arrow-right-short"></i> Philosophy Department
+  </a>
+</li>
+    <li>
+      <a class="dropdown-item" href="#theology">
+        <i class="bi bi-arrow-right-short"></i> Theology Department
+      </a>
+    </li>
+  </ul>
+</li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#resources" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="Library.html">
+                <i class="bi bi-arrow-right-short"></i> Library
+              </a></li>
+              <li><a class="dropdown-item" href="#farm">
+                <i class="bi bi-arrow-right-short"></i> Farm
+              </a></li>
+              <li><a class="dropdown-item" href="#publications">
+                <i class="bi bi-arrow-right-short"></i> Publications
+              </a></li>
+            </ul>
+          </li>
+<!-- Info Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="info.html" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Info
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+    <li><a class="dropdown-item" href="contact.html">
+      <i class="bi bi-arrow-right-short"></i> Contact & Support
+    </a></li>
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="Blog.html">
+        <i class="bi bi-arrow-right-short"></i> News & Events
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="Blog.html">Latest News</a></li>
+        <li><a class="dropdown-item" href="Blog-detail.html">Event Details</a></li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="gallery.html">
+      <i class="bi bi-arrow-right-short"></i> Gallery
+    </a></li>
+    <li><a class="dropdown-item" href="external-links.html">
+      <i class="bi bi-arrow-right-short"></i> External Links
+    </a></li>
+  </ul>
+</li>
+
+
+          <!-- Alumni -->
+          <li class="nav-item">
+            <a class="nav-link" href="alumni.html">Alumni</a>
+          </li>
+
+          <!-- Reflection (no dropdown) -->
+          <li class="nav-item">
+            <a class="reflection-btn" href="Reflection.html">📖 Reflection</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+<!-- News & Events Hero -->
+<section class="news-hero position-relative">
+  <img src="images/sams image 10.jpg" alt="Seminary News & Events" class="w-100" loading="lazy">
+  <div class="news-hero-content position-absolute top-50 start-50 translate-middle text-center text-white">
+    <h1 class="fw-bold">Seminary News & Events</h1>
+    <p class="lead">
+      Discover the latest updates, achievements, and happenings from our Seminary community.
+    </p>
+  </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Seminary News & Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Blog Listing Page -->
+  <section class="blog-listing py-5">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Seminary News & Events</h2>
+        <p>Browse all our latest updates, achievements, and happenings.</p>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="row g-4">
+
+        <!-- Blog Card 1 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="GRAPHICS/ordination-thumb.jpg" alt="Ordination Ceremony" class="blog-thumb" loading="lazy">
+            <div class="blog-content">
+              <h5><a href="ordination.html">Ordination Ceremony</a></h5>
+              <p class="blog-date">March 2026</p>
+              <p class="blog-excerpt">Celebrating the ordination of our seminarians into priesthood...</p>
+              <a href="ordination.html" class="blog-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="GRAPHICS/symposium-thumb.jpg" alt="Academic Symposium" class="blog-thumb" loading="lazy">
+            <div class="blog-content">
+              <h5><a href="symposium.html">Academic Symposium</a></h5>
+              <p class="blog-date">February 2026</p>
+              <p class="blog-excerpt">Faculty and students gathered to discuss theology and modern challenges...</p>
+              <a href="symposium.html" class="blog-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="GRAPHICS/retreat-thumb.jpg" alt="Spiritual Retreat" class="blog-thumb" loading="lazy">
+            <div class="blog-content">
+              <h5><a href="retreat.html">Spiritual Retreat</a></h5>
+              <p class="blog-date">January 2026</p>
+              <p class="blog-excerpt">A week of prayer, reflection, and renewal for seminarians...</p>
+              <a href="retreat.html" class="blog-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="GRAPHICS/festival-thumb.jpg" alt="Annual Seminary Festival" class="blog-thumb" loading="lazy">
+            <div class="blog-content">
+              <h5><a href="festival.html">Annual Seminary Festival</a></h5>
+              <p class="blog-date">November 2025</p>
+              <p class="blog-excerpt">A joyful celebration of community, culture, and faith...</p>
+              <a href="festival.html" class="blog-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 5 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="GRAPHICS/outreach-thumb.jpg" alt="Community Outreach Program" class="blog-thumb" loading="lazy">
+            <div class="blog-content">
+              <h5><a href="outreach.html">Community Outreach Program</a></h5>
+              <p class="blog-date">October 2025</p>
+              <p class="blog-excerpt">Seminarians engage in service projects to support local communities...</p>
+              <a href="outreach.html" class="blog-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog Card 6 -->
+        <div class="col-md-4">
+          <div class="blog-card">
+            <img src="GRAPHICS/choir-thumb.jpg" alt="Seminary Choir Concert" class="blog-thumb" loading="lazy">
+            <div class="blog-content">
+              <h5><a href="choir.html">Seminary Choir Concert</a></h5>
+              <p class="blog-date">September 2025</p>
+              <p class="blog-excerpt">An evening of sacred music performed by the seminary choir...</p>
+              <a href="choir.html" class="blog-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+   <!-- Pagination -->
+<nav class="blog-pagination mt-5">
+  <ul class="pagination pagination-unique justify-content-center">
+    <li class="page-item disabled"><a class="page-link">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+
+<!-- Loading Animation Script -->
+<script>
+  window.addEventListener('load', function() {
+    const loader = document.getElementById('loading-overlay');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    }
+
+    // Lazy loading images
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    lazyImages.forEach(img => {
+      img.addEventListener('load', () => {
+        img.classList.add('loaded');
+      });
+      // If already loaded
+      if (img.complete) {
+        img.classList.add('loaded');
+      }
+    });
+  });
+
+  // Fallback: hide loader after 5 seconds if load event doesn't fire
+  setTimeout(() => {
+    const loader = document.getElementById('loading-overlay');
+    if (loader && loader.style.display !== 'none') {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    }
+  }, 5000);
+</script>
+</body>
+</html>
+
+
+
+
+
+

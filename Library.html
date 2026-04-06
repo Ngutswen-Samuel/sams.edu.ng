@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semary Website</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- ✅ YOUR EXTERNAL CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ 
+  <!-- Top Header Bar -->
+  <div class="header-top">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Left: Follow Us -->
+        <div class="col-md-6">
+          <div class="follow-us">
+            <span>Follow Us:</span>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Right: Contact Info -->
+        <div class="col-md-6 text-end">
+          <div class="contact-info">
+            <span><i class="bi bi-geo-alt"></i> Jos, Nigeria</span>
+            <span><i class="bi bi-envelope"></i> info@samsjos.edu.ng</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <!-- Logo -->
+       <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="images/SAMS LOGO.jpeg" alt="Logo" class="me-2 rounded-circle" height="40" width="40" loading="lazy">
+  <span class="fw-bold fs-6 d-none d-md-inline">St Augustine's Major Seminary</span>
+  <span class="fw-bold fs-6 d-inline d-md-none">SAMS</span>
+</a>
+
+  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  
+</button>
+
+
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+  <a class="nav-link" href="index.html">Home</a>
+</li>
+
+          
+          <!-- About Us Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="History.html">
+                <i class="bi bi-arrow-right-short"></i> History
+              </a></li>
+              <li><a class="dropdown-item" href="administration.html">
+            <i class="bi bi-arrow-right-short"></i> Administration
+          </a></li>
+              <li><a class="dropdown-item" href="Vocation-Formation.html">
+                <i class="bi bi-arrow-right-short"></i> Vocation & Formation
+              </a></li>
+            </ul>
+          </li>
+<!-- Academics Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#academics" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Academics
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+    <li>
+      <a class="dropdown-item" href="Admission.html">
+  <i class="bi bi-arrow-right-short"></i> Admission
+</a>
+
+    </li>
+   <li>
+  <a class="dropdown-item" href="philosophy%20department.html">
+    <i class="bi bi-arrow-right-short"></i> Philosophy Department
+  </a>
+</li>
+    <li>
+      <a class="dropdown-item" href="#theology">
+        <i class="bi bi-arrow-right-short"></i> Theology Department
+      </a>
+    </li>
+  </ul>
+</li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#resources" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="Library.html">
+                <i class="bi bi-arrow-right-short"></i> Library
+              </a></li>
+              <li><a class="dropdown-item" href="#farm">
+                <i class="bi bi-arrow-right-short"></i> Farm
+              </a></li>
+              <li><a class="dropdown-item" href="#publications">
+                <i class="bi bi-arrow-right-short"></i> Publications
+              </a></li>
+            </ul>
+          </li>
+<!-- Info Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="info.html" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Info
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+    <li><a class="dropdown-item" href="contact.html">
+      <i class="bi bi-arrow-right-short"></i> Contact & Support
+    </a></li>
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="Blog.html">
+        <i class="bi bi-arrow-right-short"></i> News & Events
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="Blog.html">Latest News</a></li>
+        <li><a class="dropdown-item" href="Blog-detail.html">Event Details</a></li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="gallery.html">
+      <i class="bi bi-arrow-right-short"></i> Gallery
+    </a></li>
+    <li><a class="dropdown-item" href="external-links.html">
+      <i class="bi bi-arrow-right-short"></i> External Links
+    </a></li>
+  </ul>
+</li>
+
+
+          <!-- Alumni -->
+          <li class="nav-item">
+            <a class="nav-link" href="alumni.html">Alumni</a>
+          </li>
+
+          <!-- Reflection (no dropdown) -->
+          <li class="nav-item">
+            <a class="reflection-btn" href="Reflection.html">📖 Reflection</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO SECTION -->
+<div class="hero-department">
+  <h1 class="hero-title">Department of Philosophy</h1>
+  <p class="hero-subtitle">Forming Minds in Truth, Reason, and Wisdom</p>
+</div>
+
+
+<!-- ================= LIBRARY INTRO FLEX ================= -->
+<section class="library-intro py-5">
+  <div class="container intro-flex">
+    <!-- Text Block (Left) -->
+    <div class="intro-text">
+      <h2>About Our Library</h2>
+      <p>
+        The Seminary Library is the heart of our academic and spiritual formation. 
+        It houses a rich collection of theological works, scripture studies, pastoral 
+        resources, and general studies. Beyond books, it provides quiet study spaces, 
+        research support, and guidance for seminarians preparing for ministry.
+      </p>
+      <p>
+        Our mission is to nurture intellectual growth and deepen faith through access 
+        to timeless wisdom and modern scholarship.
+      </p>
+    </div>
+
+    <!-- Image Block (Right) -->
+    <div class="intro-image">
+      <img src="images/church image.webp" alt="Seminary Library" class="img-fluid" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUICK INFO ================= -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row gy-4 text-center">
+      <div class="col-md-3">
+        <i class="bi bi-clock display-5 text-success"></i>
+        <h5 class="mt-3">Opening Hours</h5>
+        <p>Mon–Fri: 8:00 AM – 6:00 PM<br>Sat: 9:00 AM – 2:00 PM</p>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-geo-alt display-5 text-success"></i>
+        <h5 class="mt-3">Location</h5>
+        <p>Seminary Main Campus, Jos</p>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-envelope display-5 text-success"></i>
+        <h5 class="mt-3">Contact</h5>
+        <p>library@samsjos.edu.ng<br>+234 XXX XXX XXXX</p>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-book display-5 text-success"></i>
+        <h5 class="mt-3">Services</h5>
+        <p>Borrowing, Reading Rooms,<br>Research Assistance</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COLLECTIONS (Modern Table) ================= -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Library Collections</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle modern-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Theology & Philosophy</td><td>Core texts, Church Fathers, Scholastic works, and contemporary theology.</td></tr>
+          <tr><td>Scripture Studies</td><td>Bibles, commentaries, concordances, and exegetical resources.</td></tr>
+          <tr><td>Pastoral Resources</td><td>Homiletics, liturgy, catechesis, and parish ministry guides.</td></tr>
+          <tr><td>General Studies</td><td>History, literature, languages, and interdisciplinary works.</td></tr>
+          <tr><td>Reference Materials</td><td>Encyclopedias, dictionaries, concordances, and academic handbooks.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW TO USE (Accordion) ================= -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">How to Use the Library</h2>
+    <div class="accordion" id="libraryAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="ruleOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Membership & Borrowing
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#libraryAccordion">
+          <div class="accordion-body">
+            Rules for borrowing books, membership eligibility, and loan periods.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="ruleTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Study Spaces
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#libraryAccordion">
+          <div class="accordion-body">
+            Guidelines for quiet zones, reading rooms, and group study areas.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="ruleThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Librarian Assistance
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#libraryAccordion">
+          <div class="accordion-body">
+            Support for research, writing, and accessing specialized resources.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="ruleFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            Orientation
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#libraryAccordion">
+          <div class="accordion-body">
+            Introductory sessions for new seminarians to learn how to use the library effectively.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED BOOKS (Modern Table) ================= -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Books & New Arrivals</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover align-middle modern-table">
+        <thead>
+          <tr>
+            <th>Title</th><th>Author</th><th>Category</th><th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Summa Theologica</td><td>St. Thomas Aquinas</td><td>Theology & Philosophy</td><td>1274</td></tr>
+          <tr><td>Confessions</td><td>St. Augustine</td><td>Spiritual Classics</td><td>398</td></tr>
+          <tr><td>Biblical Commentary on Romans</td><td>Karl Barth</td><td>Scripture Studies</td><td>1919</td></tr>
+          <tr><td>Pastoral Care</td><td>Gregory the Great</td><td>Pastoral Resources</td><td>590</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- Study Support Section -->
+<section class="study-support-section py-5">
+  <div class="container intro-flex">
+    <!-- Text Left -->
+    <div class="flex-text">
+      <h2>Study & Research Support</h2>
+      <p>
+        Our librarians provide research assistance, workshops on academic writing and citation,
+        and guidance for thesis or dissertation preparation. We are committed to supporting your
+        intellectual and spiritual formation.
+      </p>
+    </div>
+    <!-- Accent Right -->
+    <div class="flex-accent">
+      <div class="accent-content">
+        <h3>24/7 Internet Access</h3>
+        <p>Reliable, high‑speed network available for all research and study needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- E-Library Section -->
+<section class="elib-section py-5">
+  <div class="container intro-flex">
+    <!-- Text Left -->
+    <div class="flex-text">
+      <h2>Our E‑Library</h2>
+      <p>
+        We are working to bring our Seminary Library resources online. Soon, you will be able to
+        access digital books, journals, and theological databases directly from anywhere.
+      </p>
+      <a class="btn btn-success px-4 py-2 disabled" aria-disabled="true">Access E‑Library (Coming Soon)</a>
+    </div>
+    <!-- Accent Right -->
+    <div class="flex-accent">
+      <div class="accent-content">
+        <h3>Digital Resources</h3>
+        <p>Standard access to e‑books, journals, and theological databases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= CALL TO ACTION ================= -->
+<section class="py-5 bg-white">
+  <div class="container text-center">
+    <h2>Explore, Learn, and Grow in Faith</h2>
+    <div class="d-flex justify-content-center gap-3 flex-wrap mt-3">
+      <a class="btn btn-success px-4 py-2">Visit the Library</a>
+      <a class="btn btn-outline-success px-4 py-2">Ask a Librarian</a>
+      <a class="btn btn-success px-4 py-2">View Collections</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>
+

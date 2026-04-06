@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semary Website</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- ✅ YOUR EXTERNAL CSS FILE -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="loading-spinner">
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
+  <!-- Top Header Bar -->
+  <div class="header-top">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Left: Follow Us -->
+        <div class="col-md-6">
+          <div class="follow-us">
+            <span>Follow Us:</span>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+        <!-- Right: Contact Info -->
+        <div class="col-md-6 text-end">
+          <div class="contact-info">
+            <span><i class="bi bi-geo-alt"></i> Jos, Nigeria</span>
+            <span><i class="bi bi-envelope"></i> info@samsjos.edu.ng</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <!-- Logo -->
+       <a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="images/SAMS LOGO.jpeg" alt="Logo" class="me-2 rounded-circle" height="40" width="40" loading="lazy">
+  <span class="fw-bold fs-6 d-none d-md-inline">St Augustine's Major Seminary</span>
+  <span class="fw-bold fs-6 d-inline d-md-none">SAMS</span>
+</a>
+
+  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  
+</button>
+
+
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+  <a class="nav-link" href="index.html">Home</a>
+</li>
+
+          
+          <!-- About Us Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="History.html">
+                <i class="bi bi-arrow-right-short"></i> History
+              </a></li>
+              <li><a class="dropdown-item" href="administration.html">
+            <i class="bi bi-arrow-right-short"></i> Administration
+          </a></li>
+              <li><a class="dropdown-item" href="Vocation-Formation.html">
+                <i class="bi bi-arrow-right-short"></i> Vocation & Formation
+              </a></li>
+            </ul>
+          </li>
+<!-- Academics Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#academics" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Academics
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+    <li>
+      <a class="dropdown-item" href="#admission%20admission.html">
+        <i class="bi bi-arrow-right-short"></i> Admission
+      </a>
+    </li>
+   <li>
+  <a class="dropdown-item" href="philosophy%20department.html">
+    <i class="bi bi-arrow-right-short"></i> Philosophy Department
+  </a>
+</li>
+    <li>
+      <a class="dropdown-item" href="#theology">
+        <i class="bi bi-arrow-right-short"></i> Theology Department
+      </a>
+    </li>
+  </ul>
+</li>
+
+          <!-- Resources Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#resources" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+              <li><a class="dropdown-item" href="Library.html">
+                <i class="bi bi-arrow-right-short"></i> Library
+              </a></li>
+              <li><a class="dropdown-item" href="#farm">
+                <i class="bi bi-arrow-right-short"></i> Farm
+              </a></li>
+              <li><a class="dropdown-item" href="#publications">
+                <i class="bi bi-arrow-right-short"></i> Publications
+              </a></li>
+            </ul>
+          </li>
+<!-- Info Dropdown -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="info.html" id="infoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Info
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="infoDropdown">
+    <li><a class="dropdown-item" href="contact.html">
+      <i class="bi bi-arrow-right-short"></i> Contact & Support
+    </a></li>
+    <li class="dropdown-submenu">
+      <a class="dropdown-item dropdown-toggle" href="Blog.html">
+        <i class="bi bi-arrow-right-short"></i> News & Events
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="Blog.html">Latest News</a></li>
+        <li><a class="dropdown-item" href="Blog-detail.html">Event Details</a></li>
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="gallery.html">
+      <i class="bi bi-arrow-right-short"></i> Gallery
+    </a></li>
+    <li><a class="dropdown-item" href="external-links.html">
+      <i class="bi bi-arrow-right-short"></i> External Links
+    </a></li>
+  </ul>
+</li>
+
+
+          <!-- Alumni -->
+          <li class="nav-item">
+            <a class="nav-link" href="alumni.html">Alumni</a>
+          </li>
+
+          <!-- Reflection (no dropdown) -->
+          <li class="nav-item">
+            <a class="reflection-btn" href="Reflection.html">📖 Reflection</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- ===============================
+   Contact Us Hero Section
+================================ -->
+<section class="contact-hero">
+  <!-- Background image -->
+  <img src="images/sams image 10.jpg" alt="Seminary Campus" loading="lazy">
+
+  <!-- Gradient overlay -->
+  <div class="contact-hero-overlay"></div>
+
+  <div class="container h-100 d-flex align-items-center justify-content-center">
+    <div class="contact-hero-content text-center">
+      <h1>Contact Us</h1>
+      <p>
+        Get in touch with St. Augustine Minor Seminary, Jos.<br>
+        We are here to answer your questions, guide admissions, and support vocations.<br>
+        Reach out and let us help you grow in faith and formation.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Main Flex: Form + Info -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Contact Form -->
+      <div class="col-lg-6">
+        <div class="contact-form p-4 bg-white shadow-sm rounded">
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Your Name">
+            <input type="email" class="form-control mb-3" placeholder="Your Email">
+            <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-6">
+        <div class="contact-info-block p-4 bg-white shadow-sm rounded">
+          <h3>Our Locations</h3>
+          <p><i class="bi bi-geo-alt"></i> Seminary Main Campus, Jos, Plateau State</p>
+         
+
+          <h3>Contact Details</h3>
+          <p><i class="bi bi-telephone"></i> +234 XXX XXX XXXX</p>
+          <p><i class="bi bi-telephone"></i> +234 XXX XXX XXXX</p>
+          <p><i class="bi bi-envelope"></i> info@samsjos.edu.ng</p>
+          <p><i class="bi bi-envelope"></i> admissions@samsjos.edu.ng</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Secondary Flex: Admin + Hours + Social -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h3>Administrative Contacts</h3>
+          <p><i class="bi bi-person"></i> Rector – Rev. Fr. [Name]</p>
+          <p><i class="bi bi-person"></i> Registrar – Rev. Fr. [Name]</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h3>Office Hours</h3>
+          <p>Mon – Fri: 8:00 AM – 4:00 PM</p>
+          <p>Sat: 9:00 AM – 1:00 PM</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+<!-- ================= PRAYER REQUEST SECTION ================= -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <h2 class="text-center mb-4">Send Us Your Prayer Intentions</h2>
+    <div class="p-4 bg-white shadow-sm rounded">
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Name (Optional)">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Email (Optional)">
+          </div>
+          <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Your Prayer Request"></textarea>
+          </div>
+          <div class="col-12 text-end">
+            <button class="btn btn-success px-4 py-2">Submit Intention</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DONATION ACCOUNT DETAILS ================= -->
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container">
+    <h2 class="text-center mb-4">Support Our Mission - Bank Account Details</h2>
+    <div class="row g-4">
+      <!-- Account 1 -->
+      <div class="col-md-6">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h5 class="text-center">Seminary Development Account</h5>
+          <p class="text-center">
+            <strong>Bank:</strong> Bank Name<br>
+            <strong>Account Number:</strong> 0000000000<br>
+            <strong>Account Name:</strong> St. Augustine Minor Seminary<br>
+            <strong>Branch:</strong> Bank Branch, City
+          </p>
+        </div>
+      </div>
+      <!-- Account 2 -->
+      <div class="col-md-6">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h5 class="text-center">Formation Support Account</h5>
+          <p class="text-center">
+            <strong>Bank:</strong> Bank Name<br>
+            <strong>Account Number:</strong> 0000000000<br>
+            <strong>Account Name:</strong> St. Augustine Minor Seminary<br>
+            <strong>Branch:</strong> Bank Branch, City
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p class="text-muted">
+        Every contribution, big or small, helps us fulfill our mission of training and guiding future priests.
+      </p>
+    </div>
+  </div>
+</section>
+
+  
+<!-- Map Section -->
+<section class="map-section py-5">
+  <div class="container">
+    <h3 class="text-center mb-4">Find Us</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.123456789!2d7.379!3d9.234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105b123456789abc%3A0xabcdef123456789!2sJos%2C%20Plateau%20State%20Nigeria!5e0!3m2!1sen!2sng!4v1700000000000"
+      width="100%" height="400" style="border:0;" 
+      allowfullscreen="" loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+<!-- Loading Animation Script -->
+<script>
+  window.addEventListener('load', function() {
+    const loader = document.getElementById('loading-overlay');
+    if (loader) {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    }
+
+    // Lazy loading images
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    lazyImages.forEach(img => {
+      img.addEventListener('load', () => {
+        img.classList.add('loaded');
+      });
+      // If already loaded
+      if (img.complete) {
+        img.classList.add('loaded');
+      }
+    });
+  });
+
+  // Fallback: hide loader after 5 seconds if load event doesn't fire
+  setTimeout(() => {
+    const loader = document.getElementById('loading-overlay');
+    if (loader && loader.style.display !== 'none') {
+      loader.style.opacity = '0';
+      setTimeout(() => {
+        loader.style.display = 'none';
+      }, 500);
+    }
+  }, 5000);
+</script>
+</body>
+</html>
+ 
+
+
+
+
+
